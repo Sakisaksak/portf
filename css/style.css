@@ -334,7 +334,7 @@ header {
         width: 8px;
         display: inline-block;
         margin-right: 6px;
-        background-color: #E94F37; }
+        background-color: #00aeff; }
   .main-header .right-space, .main-header .hamburguer-icon {
     display: none; }
 
@@ -458,7 +458,7 @@ header {
     text-align: center;
     margin: auto;
     width: 40px;
-    border: solid 2px #E94F37; }
+    border: solid 2px #00aeff; }
 
 .about-us {
   text-align: center; }
