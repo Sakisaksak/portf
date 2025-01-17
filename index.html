@@ -8,6 +8,10 @@
 		<link rel="stylesheet" href="css/foundation.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header>
@@ -107,7 +111,7 @@
 			<div class="main-section-title small-10 columns">
                 <div class="table">
 					<div class="table-cell">
-						<img class="avatar" src="img/avatar.jpg" alt="avatar"/>
+						<img class="avatar" src="img/white-full.jpg" alt="avatar"/>
 					</div>
                     <div class="table-cell">
 						<h2>
@@ -125,63 +129,50 @@
 			<div class="photo-gradient">
 			</div>
 		</div>
-		<div class="about-us small-12 columns no-padding small-centered inline">
+		<div id="background" class="about-us small-12 columns no-padding small-centered inline">
 			<div class="global-page-container">
-				<div id="background" class="section-title small-12 columns no-padding">
+				<div id="background-title" class="section-title small-12 columns no-padding">
 					<h3>
 						Background
 					</h3>
 					<hr>
-					</hr>
 				</div>
-				<!-- <div class="tab-box small-12 small-centered large-10 columns no-padding">
-					<div class="box-tabs">
-                        <div style="background-color: #2A2D34; font-weight: bold" class="single-tab">Mission</div>
-                        <div class="single-tab">Vision</div>
-                        <div class="single-tab">Values</div>
-                    </div>
-					<div id="box-text">
-                        Duis ac leo nisi. Mauris nec ex id lorem commodo rutrum rutrum a est. Cras facilisis sit amet lectus non posuere. Nullam non magna non enim blandit elementum.
-                    </div>
-				</div> -->
+				<div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
+			  <ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <h2>Education</h2>
+				  <br>
+				  <p>Studied Bachelor of Science in Computer Engineering <strong>(BSCpE)</strong> at Polytechnic University of the Philippines (PUP) batch of 2015.</p>
+				</div>
+				<div class="carousel-item">
+				  <h2>Experience</h2>
+				  <br>
+				  <p>Worked with two (2) companies with website development services. Used <strong>WordPress CMS</strong> for the first and <strong>October CMS</strong> for the other. <a id="openPopup">Read more</a></p>
+				</div>
+				<div class="carousel-item">
+				  <h2>Other Skills</h2>
+				  <br>
+				  <p>Website Design (Figma) &nbsp;•&nbsp; Hardware and Software Troubleshooting &nbsp;•&nbsp; Computer Programming &nbsp;•&nbsp; Photo Editing (Adobe Photoshop) &nbsp;•&nbsp; English Proficiency and Proofreading</p>
+				</div>
+				<br><br>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+		</div>
 			</div>
 		</div>
-		<div class="servicos inline small-12 columns no-padding small-centered inline">
-			<!-- <div class="global-page-container">
-                <div  class="section-title small-12 columns no-padding">
-                    <h3>
-						Services
-					</h3>
-                    <hr>
-					</hr>
-                </div>
-            </div> -->
-			<div class="service-stripe small-12 columns no-padding">
-                <div class="global-page-container">
-                    <div class="service-stripe-inner small-12 columns no-padding">
-						<div id="service-previous" class="stripe-arrow small-1 columns no-padding">
-							<p>
-								<
-							</p>
-                        </div>
-						<div class="stripe-content small-10 columns no-padding">
-                            <span id="service-title">
-								Education
-								 <!-- —  -->
-							</span>
-							<p id ="service-text">
-								<br><br>Studied Bachelor of Science in Computer Engineering <strong>(BSCpE)</strong> at Polytechnic University of the Philippines (PUP) batch of 2015.
-							</p>
-                        </div>
-						<div id="service-next" class="stripe-arrow small-1 columns no-padding">
-                            <p>
-								>
-							</p>
-                        </div>
-					</div>
-                </div>
-            </div>
-		</div>
+		
 		<div class="projetos small-12 large-12 columns no-padding small-centered inline">
 			<div class="global-page-container">
                 <div id="services" class="section-title small-12 columns no-padding">
@@ -197,7 +188,6 @@
                     <div id="slider-002" class="slider-002 small-12 small-centered columns">
 						<div class="projetos-item-outer bounce-hover small-12 medium-4 columns end"> 
                             <div class="projetos-item">
-                                <!-- <a href=""> -->
 									<div class="projetos-item-image">
                                         <img src="img/html css.jpg" alt="html"/>   
                                     </div>
@@ -208,12 +198,10 @@
                                     </div>
 									<div class="gradient-filter">
                                     </div>
-								<!-- </a> -->
                             </div>
                         </div>
 						<div class="projetos-item-outer bounce-hover small-12 medium-4 columns end"> 
                             <div class="projetos-item">
-                                <!-- <a href=""> -->
 									<div class="projetos-item-image">
                                         <img src="img/wordpress.png" alt="css"/>   
                                     </div>
@@ -224,12 +212,10 @@
                                     </div>
 									<div class="gradient-filter">
                                     </div>
-								<!-- </a> -->
                             </div>
                         </div>
 						<div class="projetos-item-outer bounce-hover small-12 medium-4 columns end"> 
                             <div class="projetos-item">
-                                <!-- <a href=""> -->
 									<div class="projetos-item-image">
                                         <img src="img/seo.jpg" alt="wordpress"/>   
                                     </div>
@@ -240,7 +226,6 @@
                                     </div>
 									<div class="gradient-filter">
                                     </div>
-								<!-- </a> -->
                             </div>
                         </div>
 					</div>
@@ -260,9 +245,9 @@
 					<a href="mailto:gsdgnavarro@gmail.com" target="_blank" class="social social-hover">
 						<img class="icons" src="img/social-icons/email.svg" alt="email-icon">
 					</a>
-					<a href="https://www.upwork.com/freelancers/~01a6af74cf4d44d969" target="_blank" class="social social-hover">
-						<img class="icons" src="img/social-icons/upwork.svg" alt="upwork-icon">
-					</a>
+					<!-- <a href="https://www.upwork.com/freelancers/~01a6af74cf4d44d969" target="_blank" class="social social-hover"> -->
+						<!-- <img class="icons" src="img/social-icons/upwork.svg" alt="upwork-icon"> -->
+					<!-- </a> -->
 					<a href="https://github.com/Sakisaksak" target="_blank" class="social social-hover">
 						<img class="icons" src="img/social-icons/github.svg" alt="github-icon">
 					</a>
@@ -279,6 +264,35 @@
                 </div>
 			</div>
 		</footer>
+		
+		<div id="css-only-modals">
+			<input checked="checked" class="css-only-modal-check" id="modal1" type="checkbox" />
+			<div class="css-only-modal">
+				<p>Informative and e-commerce website building using WordPress CMS builders such as Elementor, and October CMS.</p>
+				<div>
+					<ul>
+						<li>Providing basic SEO</li>
+						<li>Building in the span of a couple of weeks or less using minimal amount of plugins</li>
+						<li>Initially develop single-paged websites within 6 hours at most (with mock-up / wireframe provided)</li>
+						<li>Woocommerce for e-commerce website building</li>
+						<li>Implementing payment methods through API or 3rd-party links</li>
+						<li>Mobile responsiveness is always considered while building</li>
+						<li>Customizing using HTML, CSS, and JavaScript if plugins cannot provide the needed function</li>
+					</ul>
+					<ul>
+						<li>Backing up and upload of WordPress site</li>
+						<li>Providing insight on how to improve existing website if not satisfied with current design</li>
+						<li>Always taking account of the users' experience on browsing the website to appease visitors</li>
+						<li>Securing your website using tried and tested security plugins</li>
+						<li>Interpret the website to other languages using Google Translate widget</li>
+						<li>Adding functionalities through API or widgets</li>
+					</ul>
+				</div>
+				<label id="closePopup" class="css-only-modal-btn btn btn-primary btn-lg close" for="modal1">Close</label>
+			</div>
+			<div id="screen-shade"> </div>
+		</div>
+		
 		<script src="js/vendor/jquery.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/vendor/foundation.min.js"></script>

@@ -3,12 +3,20 @@
 
 document.getElementById("hamburguer-icon").onclick = function() {
   document.getElementById("sliding-header-menu-outer").style.right = "0";
-}
+};
 
 document.getElementById("sliding-header-menu-close-button").onclick = function() {
   document.getElementById("sliding-header-menu-outer").style.right = "-320px";
-}
+};
 
+
+document.getElementById("openPopup").onclick = function() {
+  document.getElementById("css-only-modals").style.display = "block";
+};
+
+document.getElementById("closePopup").onclick = function() {
+  document.getElementById("css-only-modals").style.display = "none";
+};
 
 // About us Tab
 
@@ -44,57 +52,59 @@ document.getElementById("sliding-header-menu-close-button").onclick = function()
 
 // Service slider
 
-var ourServices = [
-  {
-    'title': 'Education',
-    'text': '<br><br>Studied Bachelor of Science in Computer Engineering <strong>(BSCpE)</strong> at Polytechnic University of the Philippines (PUP) batch of 2015.'
-  },
 
-  {
-    'title': 'Experience',
-    'text': '<br><br>Had two (2) internships, one as an <strong>encoder and web designer</strong>, and the other as an <strong>IT support on-premise</strong>. Also had professional background as an <strong>IT staff and website developer</strong> from two (2) separate companies.'
-  },
 
-  {
-    'title': 'Other Skills',
-    'text': '<br><br>Hardware and Software Troubleshooting &nbsp;•&nbsp; Computer Programming &nbsp;•&nbsp; Microsoft Office Literate &nbsp;•&nbsp; Photo Editing &nbsp;•&nbsp; English Proficiency and Proofreading'
-  }
+
+
+// var ourServices = [
+  // {
+    // 'title': 'Education',
+    // 'text': '<br><br>Studied Bachelor of Science in Computer Engineering <strong>(BSCpE)</strong> at Polytechnic University of the Philippines (PUP) batch of 2015.'
+  // },
+
+  // {
+    // 'title': 'Experience',
+    // 'text': '<br><br>Worked with two (2) companies with website development services. Used <strong>WordPress CMS</strong> for the first and <strong>October CMS</strong> for the other. <a href="#" id="openPopup">Read more</a>'
+  // },
+
+  // {
+    // 'title': 'Other Skills',
+    // 'text': '<br><br>Website Design (Figma) &nbsp;•&nbsp; Hardware and Software Troubleshooting &nbsp;•&nbsp; Computer Programming &nbsp;•&nbsp; Microsoft Office Literacy &nbsp;•&nbsp; Photo Editing (Adobe Photoshop) &nbsp;•&nbsp; English Proficiency and Proofreading'
+  // }
   
-];
+// ];
 
-var previousArrow = document.getElementById("service-previous");
-var nextArrow = document.getElementById("service-next");
-var serviceTitleArea = document.getElementById("service-title");
-var serviceTextArea = document.getElementById("service-text");
+// var previousArrow = document.getElementById("service-previous");
+// var nextArrow = document.getElementById("service-next");
+// var serviceTitleArea = document.getElementById("service-title");
+// var serviceTextArea = document.getElementById("service-text");
 
-var currentService = 0;
+// var currentService = 0;
 
-nextArrow.onclick = function() {
-  if (currentService == (ourServices.length - 1)) {
-    currentService = 0;
-  } else {
-    currentService += 1;
-  }
-  var title = ourServices[currentService].title;
-  var text = ourServices[currentService].text;
-  serviceTitleArea.innerHTML = title;
-  serviceTextArea.innerHTML = text;
-}
+// nextArrow.onclick = function() {
+  // if (currentService == (ourServices.length - 1)) {
+    // currentService = 0;
+  // } else {
+    // currentService += 1;
+  // }
+  // var title = ourServices[currentService].title;
+  // var text = ourServices[currentService].text;
+  // serviceTitleArea.innerHTML = title;
+  // serviceTextArea.innerHTML = text;
+// }
 
-previousArrow.onclick = function() {
-  if (currentService == 0) {
-    currentService = ourServices.length - 1;
-  } else {
-    currentService -= 1;
-  }
+// previousArrow.onclick = function() {
+  // if (currentService == 0) {
+    // currentService = ourServices.length - 1;
+  // } else {
+    // currentService -= 1;
+  // }
   
-  var title = ourServices[currentService].title;
-  var text = ourServices[currentService].text;
-  serviceTitleArea.innerHTML = title;
-  serviceTextArea.innerHTML = text;
-}
-
-
+  // var title = ourServices[currentService].title;
+  // var text = ourServices[currentService].text;
+  // serviceTitleArea.innerHTML = title;
+  // serviceTextArea.innerHTML = text;
+// }
 
 
 // Footer
